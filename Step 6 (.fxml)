@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="601.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo.HelloController">
+   <children>
+      <Button fx:id="btnMain" alignment="CENTER" contentDisplay="CENTER" layoutX="180.0" layoutY="180.0" mnemonicParsing="false" onAction="#onBtnAction" prefHeight="58.0" prefWidth="159.0" text="Oblicz " textAlignment="CENTER" textFill="#fc0000" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="442.0" AnchorPane.topAnchor="180.0">
+         <font>
+            <Font name="Forte" size="32.0" />
+         </font>
+         <effect>
+            <Lighting bumpInput="$null">
+               <light>
+                  <Light.Distant />
+               </light>
+            </Lighting>
+         </effect>
+      </Button>
+      <TextField fx:id="promWalec" layoutX="216.0" layoutY="85.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="20.0" />
+      <Label text="Podaj promien walca:" AnchorPane.bottomAnchor="383.0" />
+      <Label text="Podaj wysokosc walca:" AnchorPane.bottomAnchor="330.0" />
+      <Label text="Podaj grubosc blachy:" AnchorPane.bottomAnchor="270.0" />
+      <TextField fx:id="wysWalec" AnchorPane.bottomAnchor="300.0" />
+      <TextField fx:id="grubBlach" layoutY="134.0" AnchorPane.bottomAnchor="241.0" />
+      <Label text="Blacha stalowa nierdzewna:" AnchorPane.rightAnchor="220.0" />
+      <Label layoutX="437.0" text="Zwykla blacha stalowa:" AnchorPane.rightAnchor="44.0" />
+      <Label layoutX="438.0" layoutY="18.0" text="Ciezar (kg):" AnchorPane.bottomAnchor="365.0" AnchorPane.rightAnchor="104.0" />
+      <Label layoutX="442.0" layoutY="79.0" text="Koszt (zl):" AnchorPane.bottomAnchor="304.0" AnchorPane.rightAnchor="108.0" />
+      <Label layoutX="237.0" layoutY="18.0" prefHeight="17.0" prefWidth="71.0" text="Ciezar (kg):" AnchorPane.bottomAnchor="365.0" AnchorPane.leftAnchor="237.0" AnchorPane.rightAnchor="292.0" />
+      <Label layoutX="237.0" layoutY="72.0" prefWidth="51.0" text="Koszt: (zl)" AnchorPane.bottomAnchor="303.0" AnchorPane.rightAnchor="313.0" />
+      <TextField fx:id="weightNierdz" layoutX="237.0" layoutY="41.0" />
+      <TextField fx:id="priceNierdz" layoutX="237.0" layoutY="109.0" />
+      <TextField fx:id="weightStal" layoutX="442.0" layoutY="41.0" />
+      <TextField fx:id="priceStal" layoutX="442.0" layoutY="109.0" />
+   </children>
+</AnchorPane>
